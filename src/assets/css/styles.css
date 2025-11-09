@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Gulya';
+  src: url("/assets/font-gulya.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .font-gulya {
     font-family: 'Gulya';
-    src: url("/assets/font-gulya.otf") format("truetype");
+    src: url("/assets/font-gulya.otf") format("opentype");
   }
 }
 
