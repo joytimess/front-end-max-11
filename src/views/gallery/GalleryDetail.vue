@@ -156,7 +156,7 @@ onMounted( async () => {
                             v-if="moreGallery.category === 'Video'"
                             :src="`https://max-11-management.test/storage/${moreGallery.path_file}`"
                             class="w-full rounded-xl block"
-                            :poster="thumbnails[gallery.id]"
+                            :poster="thumbnails[moreGallery.id]"
                             crossorigin="anonymous"
                             preload="none">
                         </video>
@@ -176,32 +176,5 @@ onMounted( async () => {
         </div>
     </section>
 
-    <!-- MORE GALLERIES -->
-
-    <!-- <section v-if="!loading" class="px-20 mb-10">
-        <h1 class="font-bold text-4xl">Gallery Lainnya</h1>
-        <div class="">
-            <div
-                v-for="moreGallery in galleries" 
-                :key="moreGallery.id" 
-                class="w-[300px] h-[300px] border border-gray-400 rounded-lg mt-5 p-5 cursor-pointer">
-                <router-link
-                    :to="{name : 'gallery.detail', params: {slug: moreGallery.slug}}">
-                    <video 
-                    v-if="moreGallery.category === 'Video'"
-                    :src="`https://max-11-management.test/storage/${moreGallery.path_file}`"
-                    class="w-full h-3/4 object-contain rounded-xl">
-
-                    </video>
-                    <img 
-                        v-if="moreGallery.category === 'Image'"
-                        :src="`https://max-11-management.test/storage/${moreGallery.path_file}`"
-                        class="w-full h-3/4 object-contain rounded-xl">
-                        ikan
-                </router-link>
-            </div>
-        </div>
-    </section> -->
-    
     <Footer/>
 </template>
