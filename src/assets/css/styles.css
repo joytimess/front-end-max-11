@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-gulya {
+    font-family: 'Gulya';
+  }
+}
+
+html, body, *{
+    font-family: 'Helvetica';
+}

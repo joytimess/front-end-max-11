@@ -1,0 +1,33 @@
+{
+  "name": "max-11",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "animate.css": "^4.1.1",
+    "axios": "^1.12.2",
+    "feather-icons": "^4.29.2",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "luxon": "^3.7.2",
+    "pinia": "^3.0.3",
+    "sweetalert2": "^11.26.3",
+    "swiper": "^12.0.3",
+    "tailwindcss": "^4.1.16",
+    "vue": "^3.5.21",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "npm:rolldown-vite@7.1.12"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.1.12"
+  }
+}
