@@ -3,6 +3,7 @@
 @layer utilities {
   .font-gulya {
     font-family: 'Gulya';
+    src: url("/assets/font-gulya.otf") format("truetype");
   }
 }
 
