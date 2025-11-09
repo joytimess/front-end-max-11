@@ -1,6 +1,6 @@
 <script setup>
-import Navbar from '@/components/navbar.vue';
-import Footer from '@/components/footer.vue';
+import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Vooter.vue';
 
 import imgHeroSection from '/assets/bg-header.png';
 

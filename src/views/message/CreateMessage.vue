@@ -1,6 +1,6 @@
 <script setup>
 import Navbar from '@/components/Navbar.vue';
-import Footer from '@/components/footer.vue';
+import Footer from '@/components/Footer.vue';
 
 import imgHeroSection from '/assets/bg-header.png';
 import accentImg from '/assets/accent-pose-input.png';
