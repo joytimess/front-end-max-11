@@ -2,14 +2,14 @@
 
 @font-face {
   font-family: 'Gulya';
-  src: url("../../../public/assets/assets/font-gulya.otf") format("opentype");
+  src: url("./font-gulya.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @layer utilities {
   .font-gulya {
-    font-family: 'Gulya' !important;
+    font-family: 'Gulya';
   }
 }
 
