@@ -151,7 +151,7 @@ onMounted( async () => {
                 <div
                     v-for="moreGallery in galleries" 
                     :key="moreGallery.id" 
-                    class="cursor-pointer w-full mb-10 px-5">
+                    class="cursor-pointer w-full mb-5 px-5">
                     <router-link
                         :to="{name : 'gallery.detail', params: {slug: moreGallery.slug}}">
                         <video 
