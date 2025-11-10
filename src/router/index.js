@@ -6,6 +6,7 @@ import Message from "@/views/message/Message.vue";
 import CreateMessage from "@/views/message/CreateMessage.vue";
 import About from "@/views/about/About.vue";
 import Thanks from "@/views/thanks/Thanks.vue";
+import GuestStar from "@/views/guest/GuestStar.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,7 @@ const router = createRouter({
                 title: 'Home',
             },
         },
+        // GALLERIES (OVERALL GALLERY)
         {
             path: '/gallery',
             component: Gallery,
@@ -27,6 +29,7 @@ const router = createRouter({
                 title: 'Gallery',
             }
         },
+        // DETAIL GALLERY
         {
             path: '/gallery/:slug',
             component: GalleryDetail,
@@ -35,6 +38,7 @@ const router = createRouter({
                 title: 'Gallery Detail',
             }
         },
+        // CREATE MESSAGE
         {
             path: '/message/create',
             component: CreateMessage,
@@ -43,6 +47,7 @@ const router = createRouter({
                 title: 'Create Message'
             }
         },
+        // OVERALL MESSAGES
         {
             path: '/message',
             component: Message,
@@ -51,6 +56,7 @@ const router = createRouter({
                 title: 'Messages'
             }
         },
+        // ABOUT
         {
             path: '/about',
             component: About,
@@ -59,12 +65,22 @@ const router = createRouter({
                 title: 'About',
             }
         },
+        // THANKSSS
         {
             path: '/thanks',
             component: Thanks,
             name: 'thanks',
             meta: {
                 title: 'Terimakasih Telah Berpartisipasi',
+            }
+        },
+        // SEMINAR
+        {
+            path: '/guestStar',
+            component: GuestStar,
+            name: 'guestStar',
+            meta: {
+                title: 'Guest Star',
             }
         }
     ]

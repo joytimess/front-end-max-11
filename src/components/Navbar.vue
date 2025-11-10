@@ -47,6 +47,9 @@ onUnmounted(() => {
             <RouterLink :to="{ name: 'about'}" class="duration-200 hover:text-purple-500">
                 About
             </RouterLink>
+            <RouterLink :to="{ name: 'guestStar'}" class="duration-200 hover:text-purple-500">
+                Guest Star
+            </RouterLink>
         </div>
     </header>
 </template>

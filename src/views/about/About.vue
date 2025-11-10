@@ -34,6 +34,14 @@ import teamRaka from '/assets/team-raka.png';
 import teamIvander from '/assets/team-ivander.png';
 
 import supportFacility from '/assets/support-facility.png';
+import supportTut from '/assets/support-tut.png';
+import supportDikti from '/assets/support-dikti.png';
+import supportPolimedia from '/assets/support-polimedia.png';
+import supportBem from '/assets/support-bem.png';
+import supportMpm from '/assets/support-mpm.png';
+import supportHima from '/assets/support-hima.png';
+import supportHimedia from '/assets/support-himedia.png';
+
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
@@ -118,6 +126,10 @@ onMounted(() => {
                     alt="media-partner-kremmasi"
                     class="h-[120px]">
                 <img 
+                    :src="medpartMarketeers" 
+                    alt="media-partner-marketeers"
+                    class="h-[120px] bg-black px-5">
+                <img 
                     :src="medpartEK" 
                     alt="media-partner-event-kampus"
                     class="h-[120px]">
@@ -183,14 +195,6 @@ onMounted(() => {
                     class="h-[120px]">
             </div>
         </div>
-        <div class="flex justify-center mt-5">
-            <div class="w-[1400px] flex justify-center gap-[60px] flex-wrap">
-                <img 
-                    :src="medpartMarketeers" 
-                    alt="media-partner-marketeers"
-                    class="h-[120px] bg-black px-5">
-            </div>
-        </div>
     </section>
 
     <!-- SUPPORTED SECTION -->
@@ -198,7 +202,37 @@ onMounted(() => {
         id="scroll-animate" 
         class="py-20 opacity-0">
         <h1 class="text-6xl uppercase text-center font-gulya text-[#2CCA4A]">Supported By</h1>
-        <div class="flex justify-center mt-10">
+        <div class="flex justify-center items-center gap-10 mt-10">
+            <img 
+                :src="supportTut" 
+                alt="support-tut-wuri-handayani"
+                class="h-[150px]">
+            <img 
+                :src="supportDikti" 
+                alt="support-diktisaintek-berdampak"
+                class="h-[150px]">
+            <img 
+                :src="supportPolimedia" 
+                alt="support-polimedia"
+                class="h-[150px]">
+            <img 
+                :src="supportBem" 
+                alt="support-bem"
+                class="h-[150px]">
+            <img 
+                :src="supportMpm" 
+                alt="support-mpm"
+                class="h-[150px]">
+        </div>
+        <div class="flex justify-center items-center gap-10 mt-10">
+            <img 
+                :src="supportHima" 
+                alt="support-hima"
+                class="h-[150px]">
+            <img 
+                :src="supportHimedia" 
+                alt="support-himedia"
+                class="h-[150px]">
             <img 
                 :src="supportFacility" 
                 alt="support-facility"

@@ -8,6 +8,8 @@ import { useMessageStore } from '@/stores/message';
 import { storeToRefs } from 'pinia';
 import { useRouter } from 'vue-router';
 
+import loadingGif from '/assets/loading-white.gif';
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -56,9 +58,13 @@ const shuffleRight = computed(() => shuffleArray(messages.value))
         </div>
     </section>
 
-    <div v-if="loading" class="py-10">
-        <h1 class="text-center font-bold text-4xl">Loading...</h1>
+    <div v-if="loading" class="flex justify-center">
+        <img 
+            :src="loadingGif" 
+            alt="loading-animation"
+            class="w-[100px]">
     </div>
+
 
     <div v-else-if="messages.length === 0" class="py-10">
         <h1 class="text-center font-bold text-4xl">Tidak Ada Pesan dan Kesan!</h1>

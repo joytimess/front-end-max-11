@@ -10,6 +10,8 @@ import { DateTime } from 'luxon';
 import { storeToRefs } from 'pinia';
 
 import imgHeroSection from '/assets/home-hero-section.jpg';
+import loadingGif from '/assets/loading-white.gif';
+
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -123,8 +125,11 @@ const shuffleRight = computed(() => shuffleArray(galleries.value))
         </div>
     </section>
 
-    <div v-if="loading">
-        <h1 class="text-center font-bold text-4xl py-10">Wait A Moment...</h1>
+    <div v-if="loading" class="flex justify-center">
+        <img 
+            :src="loadingGif" 
+            alt="loading-animation"
+            class="w-[100px]">
     </div>
 
     <div v-else-if="galleries.length === 0 ">
@@ -147,7 +152,7 @@ const shuffleRight = computed(() => shuffleArray(galleries.value))
                 reverseDirection: true,
             }"
             speed="6000"
-            class="w-1/2"
+            class="w-1/4"
         >
             <SwiperSlide
                 v-for="gallery in shuffleLeft"
@@ -191,6 +196,48 @@ const shuffleRight = computed(() => shuffleArray(galleries.value))
             }"
             speed="6000"
             class="w-1/2"
+        >
+            <SwiperSlide
+                v-for="gallery in shuffleMid"
+                :key="gallery.id"
+                class="!m-0 !p-0 !h-auto !flex-none"
+            >
+                <router-link 
+                    v-if="gallery.category === 'Video'"
+                    :to="{name : 'gallery.detail', params: {slug: gallery.slug }}">
+                    <video
+                        :poster="thumbnails[gallery.id]"
+                        crossorigin="anonymous"
+                        :src="`https://max-11-management.test/storage/${gallery.path_file}`"
+                        class="w-full h-full block rounded-xl object-cover mt-10"
+                        preload="none"
+                    ></video>
+                </router-link>
+                <router-link 
+                    v-if="gallery.category === 'Image'"
+                    :to="{name : 'gallery.detail', params: {slug: gallery.slug}}">
+                        <img
+                            :src="`https://max-11-management.test/storage/${gallery.path_file}`"
+                            class="w-full h-auto block rounded-xl mt-10 bg-black"
+                        />
+                </router-link>
+            </SwiperSlide>
+        </Swiper>
+        <Swiper
+            v-if="galleries.length"
+            :modules="[Autoplay]"
+            direction="vertical"
+            loop="true"
+            slides-per-view="auto"
+            space-between="0"
+            allow-touch-move="false"
+            :autoplay="{
+                delay: 1,
+                disableOnInteraction: false,
+                reverseDirection: false,
+            }"
+            speed="6000"
+            class="w-1/4"
         >
             <SwiperSlide
                 v-for="gallery in shuffleRight"

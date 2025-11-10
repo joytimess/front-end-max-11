@@ -6,6 +6,7 @@ import titleMaxKun from '/assets/max-kun-title.png';
 import mascotPoseOne from '/assets/mascot-pose-1.png';
 import mascotPoseTwo from '/assets/mascot-pose-2.png';
 import mascotPoseThree from '/assets/mascot-pose-3.png';
+import loadingGif from '/assets/loading-transparent.gif';
 
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
@@ -170,8 +171,11 @@ const shuffleBottom = computed(() => shuffleArray(galleries.value))
       </div>
 
       <!-- CONDITION OF API -->
-      <div v-if="loading">
-        <h1 class="text-center font-bold text-4xl py-10">Wait A Moment...</h1>
+      <div v-if="loading" class="flex justify-center">
+        <img 
+          :src="loadingGif" 
+          alt="loading-animation"
+          class="w-[100px]">
       </div>
       
       <div v-else-if="galleries.length === 0 ">

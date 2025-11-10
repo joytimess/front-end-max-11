@@ -12,6 +12,7 @@ import { useGalleryStore } from '@/stores/gallery';
 import { slice } from 'lodash';
 
 import templateUserIcon from '/assets/templates_user_icon.png';
+import loadingGif from '/assets/loading-white.gif';
 
 const galleryStore = useGalleryStore()
 const { error, loading, galleries } = storeToRefs(galleryStore)
@@ -92,10 +93,11 @@ onMounted( async () => {
         </RouterLink>
     </section>
 
-    <div
-        v-if="loading"
-        class="w-full">
-        <h1 class="font-bold text-center text-4xl">One Moments...</h1>
+    <div v-if="loading" class="flex justify-center">
+        <img 
+            :src="loadingGif" 
+            alt="loading-animation"
+            class="w-[100px]">
     </div>
 
     <!-- DETAIL N MORE -->
