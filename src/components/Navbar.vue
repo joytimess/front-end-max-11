@@ -44,11 +44,11 @@ onUnmounted(() => {
             <RouterLink :to="{ name: 'create.message'}" class="duration-200 hover:text-purple-500">
                 Message & Impression
             </RouterLink>
-            <RouterLink :to="{ name: 'about'}" class="duration-200 hover:text-purple-500">
-                About
-            </RouterLink>
             <RouterLink :to="{ name: 'guestStar'}" class="duration-200 hover:text-purple-500">
                 Guest Star
+            </RouterLink>
+            <RouterLink :to="{ name: 'about'}" class="duration-200 hover:text-purple-500">
+                About
             </RouterLink>
         </div>
     </header>
