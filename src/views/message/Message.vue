@@ -34,7 +34,7 @@ onMounted( async () => {
 
     setTimeout(() => {
         router.push({ name: 'thanks'})
-    }, 120000); // 2000 = 2 detik, 20000 = 20 detik, 60000 = 60 detik, 120000 = 120 detik
+    }, 60000); // 2000 = 2 detik, 20000 = 20 detik, 60000 = 60 detik, 120000 = 120 detik
 })
 
 const shuffleLeft = computed(() => shuffleArray(messages.value))

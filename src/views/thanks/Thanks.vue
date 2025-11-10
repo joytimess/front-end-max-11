@@ -10,7 +10,7 @@ const router = useRouter()
 onMounted(() => {
     setTimeout(() => {
         router.push({ name: 'home'})
-    }, 120000);
+    }, 60000);
 })
 
 </script>
