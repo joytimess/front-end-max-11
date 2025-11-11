@@ -23,7 +23,7 @@ onMounted(() => {
             backgroundPosition: 'top',   
         }"
         class="h-screen animate__animated animate__fadeInDown flex flex-col justify-between">
-        <h1 class="text-6xl font-gulya text-white uppercase text-center mt-40">terimakasih telah <br>berpartisipasi</h1>
+        <h1 class="text-6xl font-gulya tracking-wider text-white uppercase text-center mt-40">terimakasih telah <br>berpartisipasi</h1>
         <div class="flex justify-center">
             <img 
                 :src="mascotThanks" 

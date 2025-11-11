@@ -7,6 +7,7 @@ import mascotPoseOne from '/assets/mascot-pose-1.png';
 import mascotPoseTwo from '/assets/mascot-pose-2.png';
 import mascotPoseThree from '/assets/mascot-pose-3.png';
 import loadingGif from '/assets/loading-transparent.gif';
+import videoMotion from '/assets/video-motion.mp4';
 
 import Navbar from '@/components/Navbar.vue';
 import Footer from '@/components/Footer.vue';
@@ -165,8 +166,13 @@ const shuffleBottom = computed(() => shuffleArray(galleries.value))
       <div 
         id="scroll-animate"
         class="p-20 opacity-0">
-        <div class="w-full h-[600px] bg-red-300 rounded-xl flex items-center justify-center">
-          <p class="text-center text-white">ini video nya mana coeg</p>
+        <div class="w-full rounded-xl flex items-center justify-center">
+          <video
+            :src="videoMotion"
+            controls
+            class="rounded-xl">
+            
+          </video>
         </div>
       </div>
 
