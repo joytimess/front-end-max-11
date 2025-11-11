@@ -164,14 +164,14 @@ const shuffleBottom = computed(() => shuffleArray(galleries.value))
 
       <!-- SECTION MOTION VIDEO OF MAX-11 -->
       <div 
-        id="scroll-animate"
-        class="p-20 opacity-0">
+        id=""
+        class="p-20">
         <div class="w-full rounded-xl flex items-center justify-center">
           <video
             :src="videoMotion"
-            controls
+            autoplay
+            loop
             class="rounded-xl">
-            
           </video>
         </div>
       </div>

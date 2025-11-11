@@ -120,7 +120,7 @@ onMounted(() => {
                 <img 
                     :src="medpartUnasTv" 
                     alt="media-partner-unas-tv"
-                    class="h-[120px]">
+                    class="h-[50px]">
                 <img 
                     :src="medpartKremmasi" 
                     alt="media-partner-kremmasi"
