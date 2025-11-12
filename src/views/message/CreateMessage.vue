@@ -77,7 +77,7 @@ onMounted( async() => {
             </div>
             <!-- RIGHT FOR INPUT MESSAGE -->
             <div class="w-2/3 px-20">
-                <h1 class="text-4xl font-bold capitalize">Kirim kami pesan & kesan kali ya!!!</h1>
+                <h1 class="text-4xl font-bold capitalize">Kirim Kami Pesan & Kesan Kali Ya</h1>
                 <p class="text-2xl mt-5">Tuliskan pesan & kesan tentang MAX 11</p>
                 <form @submit.prevent="handleSubmit" class="mt-10">
                     <!-- FOR INPUT NAME -->
