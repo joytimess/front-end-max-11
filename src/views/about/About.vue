@@ -266,40 +266,66 @@ onMounted(() => {
             :speed="2000"
             class="mt-10">
             <SwiperSlide>
-                <img 
-                    :src="teamMaulana" 
-                    alt="team-maulana"
-                    class="h-[400px]">
+                <a
+                    href="https://www.instagram.com/maul.ahmad.s/"
+                    target="_blank">
+                    <img 
+                        :src="teamMaulana" 
+                        alt="team-maulana"
+                        class="h-[400px]">
+                </a>
             </SwiperSlide>
             <SwiperSlide>
-                <img 
-                    :src="teamBambang" 
-                    alt="team-bambang"
-                    class="h-[400px]">
+                <a 
+                    href="https://www.instagram.com/bmbgwijaya/"
+                    target="_blank">
+                    <img 
+                        :src="teamBambang" 
+                        alt="team-bambang"
+                        class="h-[400px]">
+                </a>
             </SwiperSlide>
             <SwiperSlide>
-                <img 
-                    :src="teamAdryan" 
-                    alt="team-adryan"
-                    class="h-[400px]">
+                <a 
+                    href="https://www.instagram.com/yaannmmy/"
+                    target="_blank">
+                    <img 
+                        :src="teamAdryan" 
+                        alt="team-adryan"
+                        class="h-[400px]">
+                    
+                </a>
             </SwiperSlide>
             <SwiperSlide>
-                <img 
-                    :src="teamIlyas" 
-                    alt="team-ilyas"
-                    class="h-[400px]">
+                <a 
+                    href="https://www.instagram.com/yasilyas26_/"
+                    target="_blank">
+                    <img 
+                        :src="teamIlyas" 
+                        alt="team-ilyas"
+                        class="h-[400px]">
+                </a>
             </SwiperSlide>
             <SwiperSlide>
-                <img 
-                    :src="teamIvander" 
-                    alt="team-ivander"
-                    class="h-[400px]">
+                <a 
+                    href="https://www.instagram.com/ivandernathan_college/"
+                    target="_blank">
+                    <img 
+                        :src="teamIvander" 
+                        alt="team-ivander"
+                        class="h-[400px]">
+                </a>
             </SwiperSlide>
             <SwiperSlide>
-                <img 
+                <a 
+                    href="https://www.instagram.com/dannaraka/"
+                    target="_blank">
+
+                    <img 
                     :src="teamRaka" 
                     alt="team-raka"
                     class="h-[400px]">
+                </a>
             </SwiperSlide>
         </Swiper>
     </section>
