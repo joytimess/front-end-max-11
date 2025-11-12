@@ -34,7 +34,7 @@ const form = ref({
 const handleSubmit = async () => {
     if(checkBadWords(form.value.name) || checkBadWords(form.value.message)){
         Swal.fire({
-            title: 'Tidak Bisa Diinput!',
+            title: 'Terdeteksi Kata-kata Kasar!',
             text: 'Tolong ketikannya dijaga yh!',
             icon: 'error',
             confirmButtonColor: '#d33'
