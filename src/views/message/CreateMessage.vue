@@ -16,7 +16,7 @@ const { success, error, loading } = storeToRefs(messageStore)
 const { createMessage } = messageStore
 
 const badWords = [
-    'anjing', 'kontol', 'babi', 'ngentot', 'memek', 'jembut', 'nigga', 'bangsat', 'titit', 'penis', 'vagina', 'tolol', 'dongo', 'dungu', 'idiot', 'anjeng', 'cuki', 'puki'
+    'anjing', 'kontol', 'babi', 'ngentot', 'memek', 'jembut', 'nigga', 'bangsat', 'titit', 'penis', 'vagina', 'tolol', 'dongo', 'dungu', 'idiot', 'anjeng', 'cuki', 'puki', 'cunt', 'twat', 'timur', 'ireng', 'faggot', 'rape', 'fuck'
 ]
 
 
@@ -35,7 +35,7 @@ const handleSubmit = async () => {
     if(checkBadWords(form.value.name) || checkBadWords(form.value.message)){
         Swal.fire({
             title: 'Tidak Bisa Diinput!',
-            text: 'Jangan gunakan kata-kata kasar yah pls bgt woe!',
+            text: 'Tolong ketikannya dijaga yh!',
             icon: 'error',
             confirmButtonColor: '#d33'
         });
