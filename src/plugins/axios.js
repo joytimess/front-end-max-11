@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL= '127.0.0.1:8000/api'
+axios.defaults.baseURL= 'https://max-11-management.test/api'
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers.common['Accept'] = 'application/json'
 
